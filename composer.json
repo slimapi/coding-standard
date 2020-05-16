@@ -1,0 +1,22 @@
+{
+    "name": "slimapi/coding-standard",
+    "description": "SlimAPI Coding Standard",
+    "license": "MIT",
+    "archive": {
+        "exclude": [".*", "*", "!/src", "!LICENSE.md", "!README.md"]
+    },
+    "autoload": {
+        "psr-4": {
+            "SlimAPI\\": "src/"
+        }
+    },
+    "require": {
+        "php": "~7.3",
+        "squizlabs/php_codesniffer": "~3.5.5",
+        "slevomat/coding-standard": "~6.3.5"
+    },
+    "scripts": {
+        "sniffs": "./vendor/bin/phpcs --standard=src/ruleset.xml -e > sniffs.txt",
+        "doc": "./vendor/bin/phpcs --standard=src/ruleset.xml --generator=Markdown > standard.md"
+    }
+}

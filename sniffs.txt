@@ -1,0 +1,221 @@
+
+The SlimAPI standard contains 195 sniffs
+
+Generic (45 sniffs)
+-------------------
+  Generic.Arrays.ArrayIndent
+  Generic.Arrays.DisallowLongArraySyntax
+  Generic.Classes.DuplicateClassName
+  Generic.CodeAnalysis.EmptyStatement
+  Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
+  Generic.CodeAnalysis.ForLoopWithTestFunctionCall
+  Generic.CodeAnalysis.JumbledIncrementer
+  Generic.CodeAnalysis.UnconditionalIfStatement
+  Generic.CodeAnalysis.UnnecessaryFinalModifier
+  Generic.CodeAnalysis.UnusedFunctionParameter
+  Generic.CodeAnalysis.UselessOverridingMethod
+  Generic.ControlStructures.InlineControlStructure
+  Generic.Files.ByteOrderMark
+  Generic.Files.EndFileNewline
+  Generic.Files.InlineHTML
+  Generic.Files.LineEndings
+  Generic.Files.LineLength
+  Generic.Files.OneClassPerFile
+  Generic.Files.OneInterfacePerFile
+  Generic.Files.OneTraitPerFile
+  Generic.Formatting.DisallowMultipleStatements
+  Generic.Formatting.SpaceAfterCast
+  Generic.Functions.CallTimePassByReference
+  Generic.Functions.FunctionCallArgumentSpacing
+  Generic.Functions.OpeningFunctionBraceBsdAllman
+  Generic.Metrics.CyclomaticComplexity
+  Generic.Metrics.NestingLevel
+  Generic.NamingConventions.ConstructorName
+  Generic.NamingConventions.UpperCaseConstantName
+  Generic.PHP.BacktickOperator
+  Generic.PHP.CharacterBeforePHPOpeningTag
+  Generic.PHP.DeprecatedFunctions
+  Generic.PHP.DisallowAlternativePHPTags
+  Generic.PHP.DisallowShortOpenTag
+  Generic.PHP.ForbiddenFunctions
+  Generic.PHP.LowerCaseConstant
+  Generic.PHP.LowerCaseKeyword
+  Generic.PHP.LowerCaseType
+  Generic.PHP.NoSilencedErrors
+  Generic.PHP.SAPIUsage
+  Generic.Strings.UnnecessaryStringConcat
+  Generic.WhiteSpace.ArbitraryParenthesesSpacing
+  Generic.WhiteSpace.DisallowTabIndent
+  Generic.WhiteSpace.LanguageConstructSpacing
+  Generic.WhiteSpace.ScopeIndent
+
+MySource (1 sniff)
+-------------------
+  MySource.Channels.DisallowSelfActions
+
+PEAR (6 sniffs)
+---------------
+  PEAR.Classes.ClassDeclaration
+  PEAR.Commenting.InlineComment
+  PEAR.ControlStructures.ControlSignature
+  PEAR.Formatting.MultiLineAssignment
+  PEAR.Functions.ValidDefaultValue
+  PEAR.WhiteSpace.ObjectOperatorIndent
+
+PSR1 (3 sniffs)
+---------------
+  PSR1.Classes.ClassDeclaration
+  PSR1.Files.SideEffects
+  PSR1.Methods.CamelCapsMethodName
+
+PSR2 (12 sniffs)
+----------------
+  PSR2.Classes.ClassDeclaration
+  PSR2.Classes.PropertyDeclaration
+  PSR2.ControlStructures.ControlStructureSpacing
+  PSR2.ControlStructures.ElseIfDeclaration
+  PSR2.ControlStructures.SwitchDeclaration
+  PSR2.Files.ClosingTag
+  PSR2.Files.EndFileNewline
+  PSR2.Methods.FunctionCallSignature
+  PSR2.Methods.FunctionClosingBrace
+  PSR2.Methods.MethodDeclaration
+  PSR2.Namespaces.NamespaceDeclaration
+  PSR2.Namespaces.UseDeclaration
+
+SlimAPI (2 sniffs)
+----------------
+  SlimAPI.TypeHints.DeclareStrictTypes
+  SlimAPI.WhiteSpace.MultipleEmptyLines
+
+SlevomatCodingStandard (83 sniffs)
+----------------------------------
+  SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
+  SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
+  SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
+  SlevomatCodingStandard.Arrays.TrailingArrayComma
+  SlevomatCodingStandard.Classes.ClassConstantVisibility
+  SlevomatCodingStandard.Classes.ClassMemberSpacing
+  SlevomatCodingStandard.Classes.ClassStructure
+  SlevomatCodingStandard.Classes.ConstantSpacing
+  SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
+  SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
+  SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
+  SlevomatCodingStandard.Classes.MethodSpacing
+  SlevomatCodingStandard.Classes.ModernClassNameReference
+  SlevomatCodingStandard.Classes.PropertySpacing
+  SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
+  SlevomatCodingStandard.Classes.TraitUseDeclaration
+  SlevomatCodingStandard.Classes.UnusedPrivateElements
+  SlevomatCodingStandard.Classes.UselessLateStaticBinding
+  SlevomatCodingStandard.Commenting.ForbiddenAnnotations
+  SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
+  SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment
+  SlevomatCodingStandard.Commenting.UselessFunctionDocComment
+  SlevomatCodingStandard.Commenting.UselessInheritDocComment
+  SlevomatCodingStandard.ControlStructures.AssignmentInCondition
+  SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
+  SlevomatCodingStandard.ControlStructures.DisallowEmpty
+  SlevomatCodingStandard.ControlStructures.DisallowYodaComparison
+  SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
+  SlevomatCodingStandard.ControlStructures.NewWithParentheses
+  SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator
+  SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
+  SlevomatCodingStandard.Exceptions.DeadCatch
+  SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
+  SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
+  SlevomatCodingStandard.Functions.DisallowArrowFunction
+  SlevomatCodingStandard.Functions.DisallowEmptyFunction
+  SlevomatCodingStandard.Functions.RequireArrowFunction
+  SlevomatCodingStandard.Functions.StaticClosure
+  SlevomatCodingStandard.Functions.StrictCall
+  SlevomatCodingStandard.Functions.TrailingCommaInCall
+  SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
+  SlevomatCodingStandard.Functions.UselessParameterDefaultValue
+  SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
+  SlevomatCodingStandard.Namespaces.DisallowGroupUse
+  SlevomatCodingStandard.Namespaces.MultipleUsesPerLine
+  SlevomatCodingStandard.Namespaces.NamespaceDeclaration
+  SlevomatCodingStandard.Namespaces.NamespaceSpacing
+  SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly
+  SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile
+  SlevomatCodingStandard.Namespaces.UnusedUses
+  SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash
+  SlevomatCodingStandard.Namespaces.UseFromSameNamespace
+  SlevomatCodingStandard.Namespaces.UseSpacing
+  SlevomatCodingStandard.Namespaces.UselessAlias
+  SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator
+  SlevomatCodingStandard.Operators.DisallowEqualOperators
+  SlevomatCodingStandard.Operators.NegationOperatorSpacing
+  SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator
+  SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators
+  SlevomatCodingStandard.Operators.SpreadOperatorSpacing
+  SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall
+  SlevomatCodingStandard.PHP.ForbiddenClasses
+  SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
+  SlevomatCodingStandard.PHP.ReferenceSpacing
+  SlevomatCodingStandard.PHP.RequireNowdoc
+  SlevomatCodingStandard.PHP.ShortList
+  SlevomatCodingStandard.PHP.TypeCast
+  SlevomatCodingStandard.PHP.UselessParentheses
+  SlevomatCodingStandard.PHP.UselessSemicolon
+  SlevomatCodingStandard.TypeHints.DeclareStrictTypes
+  SlevomatCodingStandard.TypeHints.LongTypeHints
+  SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition
+  SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
+  SlevomatCodingStandard.TypeHints.ParameterTypeHint
+  SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
+  SlevomatCodingStandard.TypeHints.PropertyTypeHint
+  SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
+  SlevomatCodingStandard.TypeHints.ReturnTypeHint
+  SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing
+  SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
+  SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable
+  SlevomatCodingStandard.Variables.UselessVariable
+  SlevomatCodingStandard.Whitespaces.DuplicateSpaces
+
+Squiz (43 sniffs)
+-----------------
+  Squiz.Arrays.ArrayBracketSpacing
+  Squiz.Arrays.ArrayDeclaration
+  Squiz.Classes.ClassDeclaration
+  Squiz.Classes.ClassFileName
+  Squiz.Classes.DuplicateProperty
+  Squiz.Classes.LowercaseClassKeywords
+  Squiz.Classes.SelfMemberReference
+  Squiz.Classes.ValidClassName
+  Squiz.Commenting.DocCommentAlignment
+  Squiz.Commenting.EmptyCatchComment
+  Squiz.Commenting.FunctionComment
+  Squiz.ControlStructures.ControlSignature
+  Squiz.ControlStructures.ForEachLoopDeclaration
+  Squiz.ControlStructures.ForLoopDeclaration
+  Squiz.ControlStructures.LowercaseDeclaration
+  Squiz.Functions.FunctionDeclaration
+  Squiz.Functions.FunctionDeclarationArgumentSpacing
+  Squiz.Functions.FunctionDuplicateArgument
+  Squiz.Functions.GlobalFunction
+  Squiz.Functions.LowercaseFunctionKeywords
+  Squiz.Functions.MultiLineFunctionDeclaration
+  Squiz.Operators.IncrementDecrementUsage
+  Squiz.Operators.ValidLogicalOperators
+  Squiz.PHP.CommentedOutCode
+  Squiz.PHP.GlobalKeyword
+  Squiz.PHP.InnerFunctions
+  Squiz.PHP.LowercasePHPFunctions
+  Squiz.PHP.NonExecutableCode
+  Squiz.Scope.MemberVarScope
+  Squiz.Scope.MethodScope
+  Squiz.Scope.StaticThisUsage
+  Squiz.Strings.ConcatenationSpacing
+  Squiz.Strings.DoubleQuoteUsage
+  Squiz.Strings.EchoedStrings
+  Squiz.WhiteSpace.CastSpacing
+  Squiz.WhiteSpace.FunctionOpeningBraceSpace
+  Squiz.WhiteSpace.LogicalOperatorSpacing
+  Squiz.WhiteSpace.ObjectOperatorSpacing
+  Squiz.WhiteSpace.OperatorSpacing
+  Squiz.WhiteSpace.ScopeClosingBrace
+  Squiz.WhiteSpace.ScopeKeywordSpacing
+  Squiz.WhiteSpace.SemicolonSpacing
+  Squiz.WhiteSpace.SuperfluousWhitespace

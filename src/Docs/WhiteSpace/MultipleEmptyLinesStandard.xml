@@ -1,0 +1,7 @@
+<documentation title="Multiple Empty Lines">
+    <standard>
+    <![CDATA[
+    Multiple consecutive newlines in a file are not allowed.
+    ]]>
+    </standard>
+</documentation>
