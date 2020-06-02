@@ -29,6 +29,7 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
         <exclude name="SlevomatCodingStandard.Files.LineLength"/>
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
         <exclude name="SlevomatCodingStandard.Functions.UnusedParameter"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
