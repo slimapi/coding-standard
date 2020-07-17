@@ -12,8 +12,11 @@
     },
     "require": {
         "php": "~7.3",
-        "squizlabs/php_codesniffer": "~3.5.5",
-        "slevomat/coding-standard": "~6.3.5"
+        "o5/php_codesniffer": "~3.5.6",
+        "slevomat/coding-standard": "~6.3.10"
+    },
+    "replace": {
+        "squizlabs/php_codesniffer": "3.5.5"
     },
     "scripts": {
         "sniffs": "./vendor/bin/phpcs --standard=src/ruleset.xml -e > sniffs.txt",

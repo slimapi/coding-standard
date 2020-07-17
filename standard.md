@@ -1,5 +1,8 @@
 # SlimAPI Coding Standard
 
+## Multiple Empty Lines
+Multiple consecutive newlines in a file are not allowed.
+
 ## Strict Types Declaration
 When declaring strict types you should not put whitespace around the opening bracket or before the closing bracket.
   <table>
@@ -20,9 +23,6 @@ When declaring strict types you should not put whitespace around the opening bra
 </td>
    </tr>
   </table>
-
-## Multiple Empty Lines
-Multiple consecutive newlines in a file are not allowed.
 
 ## Class Declarations
 The opening brace of a class must be on the line after the definition by itself.
@@ -262,31 +262,6 @@ Method names should not be prefixed with an underscore to indicate visibility.  
    </tr>
   </table>
 
-## Class Declarations
-There should be exactly 1 space between the abstract or final keyword and the class keyword and between the class keyword and the class name.  The extends and implements keywords, if present, must be on the same line as the class name.  When interfaces implemented are spread over multiple lines, there should be exactly 1 interface mentioned per line indented by 1 level.  The closing brace of the class must go on the first line after the body of the class and must be on a line by itself.
-  <table>
-   <tr>
-    <th>Valid: Correct spacing around class keyword.</th>
-    <th>Invalid: 2 spaces used around class keyword.</th>
-   </tr>
-   <tr>
-<td>
-
-    abstract class Foo
-    {
-    }
-
-</td>
-<td>
-
-    abstract  class  Foo
-    {
-    }
-
-</td>
-   </tr>
-  </table>
-
 ## Property Declarations
 Property names should not be prefixed with an underscore to indicate visibility.  Visibility should be used to declare properties rather than the var keyword.  Only one property should be declared within a statement.  The static declaration must come after the visibility declaration.
   <table>
@@ -388,6 +363,31 @@ Property names should not be prefixed with an underscore to indicate visibility.
    </tr>
   </table>
 
+## Class Declarations
+There should be exactly 1 space between the abstract or final keyword and the class keyword and between the class keyword and the class name.  The extends and implements keywords, if present, must be on the same line as the class name.  When interfaces implemented are spread over multiple lines, there should be exactly 1 interface mentioned per line indented by 1 level.  The closing brace of the class must go on the first line after the body of the class and must be on a line by itself.
+  <table>
+   <tr>
+    <th>Valid: Correct spacing around class keyword.</th>
+    <th>Invalid: 2 spaces used around class keyword.</th>
+   </tr>
+   <tr>
+<td>
+
+    abstract class Foo
+    {
+    }
+
+</td>
+<td>
+
+    abstract  class  Foo
+    {
+    }
+
+</td>
+   </tr>
+  </table>
+
 ## Namespace Declarations
 Each use declaration must contain only one namespace and must come after the first namespace declaration.  There should be one blank line after the final use statement.
   <table>
@@ -483,29 +483,28 @@ There must be one blank line after the namespace declaration.
    </tr>
   </table>
 
-## Elseif Declarations
-PHP's elseif keyword should be used instead of else if.
+## End File Newline
+PHP Files should end with exactly one newline.
+
+## Control Structure Spacing
+Control Structures should have 0 spaces after opening parentheses and 0 spaces before closing parentheses.
   <table>
    <tr>
-    <th>Valid: Single word elseif keyword used.</th>
-    <th>Invalid: Separate else and if keywords used.</th>
+    <th>Valid: Correct spacing.</th>
+    <th>Invalid: Whitespace used inside the parentheses.</th>
    </tr>
    <tr>
 <td>
 
     if ($foo) {
         $var = 1;
-    } elseif ($bar) {
-        $var = 2;
     }
 
 </td>
 <td>
 
-    if ($foo) {
+    if ( $foo ) {
         $var = 1;
-    } else if ($bar) {
-        $var = 2;
     }
 
 </td>
@@ -642,33 +641,34 @@ Case statements should be indented 4 spaces from the switch keyword.  It should 
    </tr>
   </table>
 
-## Control Structure Spacing
-Control Structures should have 0 spaces after opening parentheses and 0 spaces before closing parentheses.
+## Elseif Declarations
+PHP's elseif keyword should be used instead of else if.
   <table>
    <tr>
-    <th>Valid: Correct spacing.</th>
-    <th>Invalid: Whitespace used inside the parentheses.</th>
+    <th>Valid: Single word elseif keyword used.</th>
+    <th>Invalid: Separate else and if keywords used.</th>
    </tr>
    <tr>
 <td>
 
     if ($foo) {
         $var = 1;
+    } elseif ($bar) {
+        $var = 2;
     }
 
 </td>
 <td>
 
-    if ( $foo ) {
+    if ($foo) {
         $var = 1;
+    } else if ($bar) {
+        $var = 2;
     }
 
 </td>
    </tr>
   </table>
-
-## End File Newline
-PHP Files should end with exactly one newline.
 
 ## Method Name
 Method names MUST be declared in camelCase.
@@ -2101,6 +2101,31 @@ All array values must be followed by a comma, including the final value.
    </tr>
   </table>
 
+## Lowercase Class Keywords
+The php keywords class, interface, trait, extends, implements, abstract, final, var, and const should be lowercase.
+  <table>
+   <tr>
+    <th>Valid: Lowercase class keywords.</th>
+    <th>Invalid: Initial capitalization of class keywords.</th>
+   </tr>
+   <tr>
+<td>
+
+    final class Foo extends Bar
+    {
+    }
+
+</td>
+<td>
+
+    Final Class Foo Extends Bar
+    {
+    }
+
+</td>
+   </tr>
+  </table>
+
 ## Self Member Reference
 The self keyword should be used instead of the current class name, should be lowercase, and should not have spaces before or after it.
   <table>
@@ -2172,31 +2197,6 @@ The self keyword should be used instead of the current class name, should be low
         {
             Foo::bar();
         }
-    }
-
-</td>
-   </tr>
-  </table>
-
-## Lowercase Class Keywords
-The php keywords class, interface, trait, extends, implements, abstract, final, var, and const should be lowercase.
-  <table>
-   <tr>
-    <th>Valid: Lowercase class keywords.</th>
-    <th>Invalid: Initial capitalization of class keywords.</th>
-   </tr>
-   <tr>
-<td>
-
-    final class Foo extends Bar
-    {
-    }
-
-</td>
-<td>
-
-    Final Class Foo Extends Bar
-    {
     }
 
 </td>
@@ -2391,4 +2391,4 @@ Semicolons should not have spaces before them.
 </td>
    </tr>
   </table>
-Documentation generated on Sat May 16 17:15:02 2020 +0200 by [PHP_CodeSniffer 3.5.5](https://github.com/squizlabs/PHP_CodeSniffer)
+Documentation generated on Fri, 17 Jul 2020 21:19:25 +0000 by [PHP_CodeSniffer 3.5.6](https://github.com/squizlabs/PHP_CodeSniffer)
