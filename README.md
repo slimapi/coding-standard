@@ -8,6 +8,11 @@ PHP coding standard for better code readability, consistency and good programmin
 ## Code Style Guide
 The guide is automatically generated and available at [standard.md](standard.md).
 
+## Development
+```bash
+$ docker-compose up
+```
+
 ## License
 See [LICENSE](LICENSE.md) file for more information.
 
