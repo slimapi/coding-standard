@@ -103,6 +103,7 @@ SlevomatCodingStandard (82 sniffs)
   SlevomatCodingStandard.Classes.TraitUseDeclaration
   SlevomatCodingStandard.Classes.UnusedPrivateElements
   SlevomatCodingStandard.Classes.UselessLateStaticBinding
+  SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
   SlevomatCodingStandard.Commenting.ForbiddenAnnotations
   SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
   SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment
@@ -148,7 +149,6 @@ SlevomatCodingStandard (82 sniffs)
   SlevomatCodingStandard.PHP.ForbiddenClasses
   SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
   SlevomatCodingStandard.PHP.ReferenceSpacing
-  SlevomatCodingStandard.PHP.RequireNowdoc
   SlevomatCodingStandard.PHP.ShortList
   SlevomatCodingStandard.PHP.TypeCast
   SlevomatCodingStandard.PHP.UselessParentheses

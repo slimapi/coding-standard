@@ -5,6 +5,7 @@
         <exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
         <exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
+        <exclude name="SlevomatCodingStandard.Classes.SuperfluousErrorNaming"/>
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"/>
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming"/>
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
@@ -20,8 +21,10 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
@@ -29,6 +32,8 @@
         <exclude name="SlevomatCodingStandard.Files.LineLength"/>
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
+        <exclude name="SlevomatCodingStandard.Functions.RequireMultiLineCall"/>
+        <exclude name="SlevomatCodingStandard.Functions.RequireSingleLineCall"/>
         <exclude name="SlevomatCodingStandard.Functions.UnusedParameter"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
@@ -40,6 +45,7 @@
         <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>
         <exclude name="SlevomatCodingStandard.PHP.DisallowReference"/>
         <exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
+        <exclude name="SlevomatCodingStandard.PHP.RequireNowdoc"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
         <exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
