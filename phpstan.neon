@@ -1,0 +1,16 @@
+includes:
+  - /root/.composer/vendor/phpstan/phpstan-strict-rules/rules.neon
+  - /root/.composer/vendor/phpstan/phpstan-nette/extension.neon
+  - /root/.composer/vendor/phpstan/phpstan-phpunit/extension.neon
+  - /root/.composer/vendor/phpstan/phpstan-phpunit/rules.neon
+
+parameters:
+  level: 8
+  tmpDir: %currentWorkingDirectory%/tmp
+  checkMissingIterableValueType: false
+  bootstrapFiles:
+    - %currentWorkingDirectory%/vendor/o5/php_codesniffer/autoload.php
+    - %currentWorkingDirectory%/vendor/o5/php_codesniffer/src/Util/Tokens.php
+
+  excludes_analyse:
+    - %currentWorkingDirectory%/tests/Functional/Sniffs/*/fixtures/*

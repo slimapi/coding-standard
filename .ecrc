@@ -1,0 +1,5 @@
+{
+    "Verbose": false,
+    "IgnoreDefaults": false,
+    "Exclude": ["sniffs.txt", "standard.md"]
+}

@@ -8,9 +8,10 @@ PHP coding standard for better code readability, consistency and good programmin
 ## Code Style Guide
 The guide is automatically generated and available at [standard.md](standard.md).
 
-## Development
+## Development & Testing
 ```bash
 $ docker-compose up
+$ docker-compose exec app composer test
 ```
 
 ## License

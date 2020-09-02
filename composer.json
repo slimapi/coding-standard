@@ -2,24 +2,38 @@
     "name": "slimapi/coding-standard",
     "description": "SlimAPI Coding Standard",
     "license": "MIT",
-    "archive": {
-        "exclude": [".*", "*", "!/src", "!LICENSE.md", "!README.md"]
-    },
     "autoload": {
         "psr-4": {
             "SlimAPI\\": "src/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/o5/php_codesniffer/autoload.php"
+        ],
+        "psr-4": {
+            "SlimAPI\\Tests\\": "tests/",
+            "PHP_CodeSniffer\\": "vendor/o5/php_codesniffer/src/"
+        }
+    },
     "require": {
-        "php": "~7.3",
-        "o5/php_codesniffer": "~3.5.6",
-        "slevomat/coding-standard": "~6.3.10"
+        "php": "^7.4",
+        "o5/php_codesniffer": "^3.5",
+        "slevomat/coding-standard": "^6.3"
     },
     "replace": {
         "squizlabs/php_codesniffer": "3.5.5"
     },
     "scripts": {
+        "bats": "bats tests/Integration",
+        "doc": "./vendor/bin/phpcs --standard=src/ruleset.xml --generator=Markdown > standard.md",
+        "ec": "ec",
+        "phpcbf": "phpcbf --standard=phpcodesniffer.xml",
+        "phpcs": "phpcs --standard=phpcodesniffer.xml",
+        "phpstan": "phpstan --ansi --configuration=phpstan.neon analyse src/ tests/",
+        "phpunit": "phpunit --no-coverage",
+        "phpunit-coverage": "phpunit",
         "sniffs": "./vendor/bin/phpcs --standard=src/ruleset.xml -e > sniffs.txt",
-        "doc": "./vendor/bin/phpcs --standard=src/ruleset.xml --generator=Markdown > standard.md"
+        "test": ["@bats", "@ec", "@phpcs", "@phpstan", "@phpunit-coverage"]
     }
 }
