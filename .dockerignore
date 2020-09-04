@@ -1,7 +1,8 @@
 */.*
 .*
 !.docker
+!.ecrc
+!.editorconfig
 Dockerfile
-README.md
 vendor
 vendor-global
