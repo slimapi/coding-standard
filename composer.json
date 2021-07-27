@@ -9,20 +9,17 @@
     },
     "autoload-dev": {
         "classmap": [
-            "vendor/o5/php_codesniffer/autoload.php"
+            "vendor/squizlabs/php_codesniffer/autoload.php"
         ],
         "psr-4": {
             "SlimAPI\\Tests\\": "tests/",
-            "PHP_CodeSniffer\\": "vendor/o5/php_codesniffer/src/"
+            "PHP_CodeSniffer\\": "vendor/squizlabs/php_codesniffer/src/"
         }
     },
     "require": {
         "php": "^7.4",
-        "o5/php_codesniffer": "^3.5",
+        "squizlabs/php_codesniffer": "^3.6",
         "slevomat/coding-standard": "^6.4"
-    },
-    "replace": {
-        "squizlabs/php_codesniffer": "3.5.6"
     },
     "scripts": {
         "bats": "bats tests/Integration",
