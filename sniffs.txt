@@ -1,5 +1,5 @@
 
-The SlimAPI standard contains 194 sniffs
+The SlimAPI standard contains 202 sniffs
 
 Generic (45 sniffs)
 -------------------
@@ -83,7 +83,7 @@ PSR2 (12 sniffs)
   PSR2.Namespaces.NamespaceDeclaration
   PSR2.Namespaces.UseDeclaration
 
-SlevomatCodingStandard (82 sniffs)
+SlevomatCodingStandard (90 sniffs)
 ----------------------------------
   SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
   SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
@@ -93,15 +93,16 @@ SlevomatCodingStandard (82 sniffs)
   SlevomatCodingStandard.Classes.ClassMemberSpacing
   SlevomatCodingStandard.Classes.ClassStructure
   SlevomatCodingStandard.Classes.ConstantSpacing
+  SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion
   SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
   SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
   SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
   SlevomatCodingStandard.Classes.MethodSpacing
   SlevomatCodingStandard.Classes.ModernClassNameReference
   SlevomatCodingStandard.Classes.PropertySpacing
+  SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion
   SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
   SlevomatCodingStandard.Classes.TraitUseDeclaration
-  SlevomatCodingStandard.Classes.UnusedPrivateElements
   SlevomatCodingStandard.Classes.UselessLateStaticBinding
   SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
   SlevomatCodingStandard.Commenting.ForbiddenAnnotations
@@ -112,19 +113,25 @@ SlevomatCodingStandard (82 sniffs)
   SlevomatCodingStandard.ControlStructures.AssignmentInCondition
   SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
   SlevomatCodingStandard.ControlStructures.DisallowEmpty
+  SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator
   SlevomatCodingStandard.ControlStructures.DisallowYodaComparison
   SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
   SlevomatCodingStandard.ControlStructures.NewWithParentheses
   SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator
   SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator
+  SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
   SlevomatCodingStandard.Exceptions.DeadCatch
   SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
+  SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
   SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
   SlevomatCodingStandard.Functions.DisallowArrowFunction
   SlevomatCodingStandard.Functions.DisallowEmptyFunction
+  SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration
+  SlevomatCodingStandard.Functions.FunctionLength
+  SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
+  SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
   SlevomatCodingStandard.Functions.StaticClosure
   SlevomatCodingStandard.Functions.StrictCall
-  SlevomatCodingStandard.Functions.TrailingCommaInCall
   SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
   SlevomatCodingStandard.Functions.UselessParameterDefaultValue
   SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
@@ -163,6 +170,7 @@ SlevomatCodingStandard (82 sniffs)
   SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
   SlevomatCodingStandard.TypeHints.ReturnTypeHint
   SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing
+  SlevomatCodingStandard.TypeHints.UnionTypeHintFormat
   SlevomatCodingStandard.TypeHints.UselessConstantTypeHint
   SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable
   SlevomatCodingStandard.Variables.UselessVariable

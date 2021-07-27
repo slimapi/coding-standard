@@ -2,6 +2,7 @@
 <ruleset name="SlimAPI">
     <rule ref="../vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <exclude name="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/>
+        <exclude name="SlevomatCodingStandard.Classes.ForbiddenPublicProperty"/>
         <exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
         <exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
         <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
@@ -29,13 +30,15 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
+        <exclude name="SlevomatCodingStandard.Files.FunctionLength"/> <!-- DEPRECATED -->
         <exclude name="SlevomatCodingStandard.Files.LineLength"/>
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Functions.DisallowNamedArguments"/>
+        <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireMultiLineCall"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireSingleLineCall"/>
         <exclude name="SlevomatCodingStandard.Functions.UnusedParameter"/>
-        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
@@ -144,15 +147,41 @@
     <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
+    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion">
+        <properties>
+            <property name="enable" value="false"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
     <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator">
+        <properties>
+            <property name="enable" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch">
+        <properties>
+            <property name="enable" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.FunctionLength">
+        <properties>
+            <property name="maxLinesLength" value="40"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
-    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration">
+        <properties>
+            <property name="enable" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
@@ -160,11 +189,6 @@
             <property name="allowFullyQualifiedExceptions" value="false"/>
             <property name="allowPartialUses" value="true"/>
             <property name="searchAnnotations" value="true"/>
-            <property name="fullyQualifiedKeywords" type="array">
-                <element value="T_EXTENDS"/>
-                <element value="T_IMPLEMENTS"/>
-                <element value="T_USE"/>
-            </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
@@ -193,6 +217,8 @@
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessAnnotation"/>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing"/>
+
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
         <property name="traversableTypeHints" type="array">
             <element value="Traversable"/>
@@ -201,6 +227,13 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation"/>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+        <properties>
+            <property name="enable" value="true"/>
+            <property name="withSpaces" value="no"/>
+            <property name="shortNullable" value="yes"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
     <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
     <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
@@ -212,15 +245,6 @@
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
         <properties>
             <property name="caseSensitive" value="true"/>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
-        <properties>
-            <property name="keywordsToCheck" type="array">
-                <element value="T_EXTENDS"/>
-                <element value="T_IMPLEMENTS"/>
-                <element value="T_USE"/>
-            </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
