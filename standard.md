@@ -2391,4 +2391,4 @@ Semicolons should not have spaces before them.
 </td>
    </tr>
   </table>
-Documentation generated on Fri, 17 Jul 2020 21:19:25 +0000 by [PHP_CodeSniffer 3.5.6](https://github.com/squizlabs/PHP_CodeSniffer)
+Documentation generated on Wed, 28 Jul 2021 14:55:58 +0200 by [PHP_CodeSniffer 3.6.0](https://github.com/squizlabs/PHP_CodeSniffer)

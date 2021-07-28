@@ -1,5 +1,5 @@
 
-The SlimAPI standard contains 202 sniffs
+The SlimAPI standard contains 201 sniffs
 
 Generic (45 sniffs)
 -------------------
@@ -83,7 +83,7 @@ PSR2 (12 sniffs)
   PSR2.Namespaces.NamespaceDeclaration
   PSR2.Namespaces.UseDeclaration
 
-SlevomatCodingStandard (90 sniffs)
+SlevomatCodingStandard (89 sniffs)
 ----------------------------------
   SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
   SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
@@ -126,7 +126,6 @@ SlevomatCodingStandard (90 sniffs)
   SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
   SlevomatCodingStandard.Functions.DisallowArrowFunction
   SlevomatCodingStandard.Functions.DisallowEmptyFunction
-  SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration
   SlevomatCodingStandard.Functions.FunctionLength
   SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
   SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
