@@ -1,29 +1,29 @@
 <phpunit
-    beStrictAboutChangesToGlobalState="true"
-    beStrictAboutCoversAnnotation="true"
-    beStrictAboutOutputDuringTests="true"
-    beStrictAboutResourceUsageDuringSmallTests="true"
-    beStrictAboutTestsThatDoNotTestAnything="true"
-    beStrictAboutTodoAnnotatedTests="true"
-    bootstrap="vendor/autoload.php"
-    cacheResultFile="tmp/phpunit.result.cache"
-    colors="true"
-    executionOrder="default"
+        beStrictAboutChangesToGlobalState="true"
+        beStrictAboutCoversAnnotation="true"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutResourceUsageDuringSmallTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        bootstrap="vendor/autoload.php"
+        cacheResultFile="tmp/phpunit.result.cache"
+        colors="true"
+        executionOrder="default"
 >
-    <testsuites>
-        <testsuite name="functional">
-            <directory>tests/Functional</directory>
-        </testsuite>
-    </testsuites>
+  <testsuites>
+    <testsuite name="functional">
+      <directory>tests/Functional</directory>
+    </testsuite>
+  </testsuites>
 
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">src</directory>
-        </whitelist>
-    </filter>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src</directory>
+    </whitelist>
+  </filter>
 
-    <logging>
-        <log type="coverage-html" target="public/coverage"/>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
-    </logging>
+  <logging>
+    <log type="coverage-html" target="public/coverage"/>
+    <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
+  </logging>
 </phpunit>

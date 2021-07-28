@@ -1,13 +1,13 @@
 <!-- NOTE: Intentionally this name of file due to bug when using Slevomat\TestCase::checkFile() and "Fatal error: Cannot declare class ..."  -->
 <ruleset name="PHP_CodeSniffer">
-    <rule ref="src/ruleset.xml"/>
+  <rule ref="src/ruleset.xml"/>
 
-    <arg name="cache"/>
-    <arg name="colors"/>
-    <arg value="sp"/>
+  <arg name="cache"/>
+  <arg name="colors"/>
+  <arg value="sp"/>
 
-    <file>src</file>
-    <file>tests/Functional</file>
+  <file>src</file>
+  <file>tests/Functional</file>
 
-    <exclude-pattern>tests/Functional/Sniffs/*/fixtures</exclude-pattern>
+  <exclude-pattern>tests/Functional/Sniffs/*/fixtures</exclude-pattern>
 </ruleset>
