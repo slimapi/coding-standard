@@ -17,8 +17,8 @@ The guide is automatically generated and available at [standard.md](standard.md)
 
 ## Local Development & Testing
 ```bash
-$ docker-compose up
-$ docker-compose exec app composer.sh test
+$ docker compose up
+$ docker compose exec app composer.sh test
 ```
 
 ## License
