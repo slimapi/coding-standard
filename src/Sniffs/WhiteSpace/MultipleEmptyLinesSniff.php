@@ -26,12 +26,7 @@ class MultipleEmptyLinesSniff implements Sniff
         ];
     }
 
-    /**
-     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
-     * @param File $phpcsFile
-     * @param int $stackPtr The current token index.
-     * @return void|int
-     */
+    // phpcs:ignore SlevomatCodingStandard.TypeHints
     public function process(File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();

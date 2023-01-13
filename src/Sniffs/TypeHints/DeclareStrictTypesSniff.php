@@ -26,12 +26,8 @@ class DeclareStrictTypesSniff implements Sniff
         ];
     }
 
-    /**
-     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
-     * @param File $phpcsFile
-     * @param int $openTagPointer
-     */
-    public function process(File $phpcsFile, $openTagPointer): void
+    // phpcs:ignore SlevomatCodingStandard.TypeHints
+    public function process(File $phpcsFile, $openTagPointer)
     {
         $declarePointer = TokenHelper::findNext($phpcsFile, T_DECLARE, $openTagPointer);
         if ($declarePointer === null) {

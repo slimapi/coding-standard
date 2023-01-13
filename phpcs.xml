@@ -1,5 +1,4 @@
-<!-- NOTE: Intentionally this name of file due to bug when using Slevomat\TestCase::checkFile() and "Fatal error: Cannot declare class ..."  -->
-<ruleset name="PHP_CodeSniffer">
+<ruleset name="SlimAPI">
   <rule ref="src/ruleset.xml"/>
 
   <arg name="cache"/>

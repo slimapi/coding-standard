@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SlimAPI\Tests\Functional\Sniffs\TypeHints;
+namespace SlimAPI\Sniffs\TypeHints;
 
 use Exception;
-use SlimAPI\Sniffs\TypeHints\DeclareStrictTypesSniff;
-use SlimAPI\Tests\Functional\TestCase;
+use SlevomatCodingStandard\Sniffs\TestCase;
 
 class DeclareStrictTypesSniffTest extends TestCase
 {
@@ -18,7 +17,6 @@ class DeclareStrictTypesSniffTest extends TestCase
 
     /**
      * @dataProvider failingExamples
-     * @param string $file
      * @throws Exception
      */
     public function testErrors(string $file): void

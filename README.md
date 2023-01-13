@@ -1,4 +1,5 @@
 # SlimAPI Coding Standard
+[![PHP Version][img-php-version]][link-packagist]
 [![Release][img-release]][link-release]
 [![License][img-license]][link-license]
 [![Build][img-build]][link-build]
@@ -17,7 +18,7 @@ The guide is automatically generated and available at [standard.md](standard.md)
 ## Local Development & Testing
 ```bash
 $ docker-compose up
-$ docker-compose exec app composer test
+$ docker-compose exec app composer.sh test
 ```
 
 ## License
@@ -27,6 +28,7 @@ See [LICENSE][link-license] file for more information.
 [link-coverage]: https://codecov.io/gh/slimapi/coding-standard
 [link-issue-tracker]: https://github.com/slimapi/coding-standard/issues
 [link-license]: LICENSE.md
+[link-packagist]: https://packagist.org/packages/slimapi/coding-standard
 [link-phpstan]: phpstan.neon
 [link-psr-12]: https://www.php-fig.org/psr/psr-12/
 [link-psr-1]: https://www.php-fig.org/psr/psr-1
@@ -35,8 +37,9 @@ See [LICENSE][link-license] file for more information.
 [link-slevomat-issue]: https://github.com/slevomat/coding-standard/issues/62
 [link-slim]: http://www.slimframework.com
 
-[img-build]: https://img.shields.io/github/workflow/status/slimapi/coding-standard/Continuous%20Integration/master?style=flat-square&label=Build
+[img-build]: https://img.shields.io/github/actions/workflow/status/slimapi/coding-standard/.github/workflows/ci.yml?branch=master&style=flat-square&label=Build
 [img-coverage]: https://img.shields.io/codecov/c/github/slimapi/coding-standard/master?style=flat-square&label=Coverage
 [img-license]: https://img.shields.io/github/license/slimapi/coding-standard?style=flat-square&label=License&color=blue
+[img-php-version]: https://img.shields.io/packagist/dependency-v/slimapi/coding-standard/php?label=PHP&style=flat-square
 [img-phpstan]: https://img.shields.io/badge/style-%208%20%28strict%29-brightgreen.svg?&label=PHPStan&style=flat-square
 [img-release]: https://img.shields.io/github/v/tag/slimapi/coding-standard.svg?label=Release&style=flat-square

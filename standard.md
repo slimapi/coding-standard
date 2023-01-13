@@ -1,8 +1,5 @@
 # SlimAPI Coding Standard
 
-## Multiple Empty Lines
-Multiple consecutive newlines in a file are not allowed.
-
 ## Strict Types Declaration
 When declaring strict types you should not put whitespace around the opening bracket or before the closing bracket.
   <table>
@@ -23,6 +20,9 @@ When declaring strict types you should not put whitespace around the opening bra
 </td>
    </tr>
   </table>
+
+## Multiple Empty Lines
+Multiple consecutive newlines in a file are not allowed.
 
 ## Class Declarations
 The opening brace of a class must be on the line after the definition by itself.
@@ -203,59 +203,25 @@ Chained object operators when spread out over multiple lines should be the first
    </tr>
   </table>
 
-## Method Declarations
-Method names should not be prefixed with an underscore to indicate visibility.  The static keyword, when present, should come after the visibility declaration, and the final and abstract keywords should come before.
+## Class Declarations
+There should be exactly 1 space between the abstract or final keyword and the class keyword and between the class keyword and the class name.  The extends and implements keywords, if present, must be on the same line as the class name.  When interfaces implemented are spread over multiple lines, there should be exactly 1 interface mentioned per line indented by 1 level.  The closing brace of the class must go on the first line after the body of the class and must be on a line by itself.
   <table>
    <tr>
-    <th>Valid: Correct method naming.</th>
-    <th>Invalid: An underscore prefix used to indicate visibility.</th>
+    <th>Valid: Correct spacing around class keyword.</th>
+    <th>Invalid: 2 spaces used around class keyword.</th>
    </tr>
    <tr>
 <td>
 
-    class Foo
+    abstract class Foo
     {
-        private function bar()
-        {
-        }
     }
 
 </td>
 <td>
 
-    class Foo
+    abstract  class  Foo
     {
-        private function _bar()
-        {
-        }
-    }
-
-</td>
-   </tr>
-  </table>
-  <table>
-   <tr>
-    <th>Valid: Correct ordering of method prefixes.</th>
-    <th>Invalid: static keyword used before visibility and final used after.</th>
-   </tr>
-   <tr>
-<td>
-
-    class Foo
-    {
-        final public static function bar()
-        {
-        }
-    }
-
-</td>
-<td>
-
-    class Foo
-    {
-        static public final function bar()
-        {
-        }
     }
 
 </td>
@@ -363,129 +329,6 @@ Property names should not be prefixed with an underscore to indicate visibility.
    </tr>
   </table>
 
-## Class Declarations
-There should be exactly 1 space between the abstract or final keyword and the class keyword and between the class keyword and the class name.  The extends and implements keywords, if present, must be on the same line as the class name.  When interfaces implemented are spread over multiple lines, there should be exactly 1 interface mentioned per line indented by 1 level.  The closing brace of the class must go on the first line after the body of the class and must be on a line by itself.
-  <table>
-   <tr>
-    <th>Valid: Correct spacing around class keyword.</th>
-    <th>Invalid: 2 spaces used around class keyword.</th>
-   </tr>
-   <tr>
-<td>
-
-    abstract class Foo
-    {
-    }
-
-</td>
-<td>
-
-    abstract  class  Foo
-    {
-    }
-
-</td>
-   </tr>
-  </table>
-
-## Namespace Declarations
-Each use declaration must contain only one namespace and must come after the first namespace declaration.  There should be one blank line after the final use statement.
-  <table>
-   <tr>
-    <th>Valid: One use declaration per namespace.</th>
-    <th>Invalid: Multiple namespaces in a use declaration.</th>
-   </tr>
-   <tr>
-<td>
-
-    use \Foo;
-    use \Bar;
-
-</td>
-<td>
-
-    use \Foo, \Bar;
-
-</td>
-   </tr>
-  </table>
-  <table>
-   <tr>
-    <th>Valid: Use statements come after first namespace.</th>
-    <th>Invalid: Namespace declared after use.</th>
-   </tr>
-   <tr>
-<td>
-
-    namespace \Foo;
-    
-    use \Bar;
-
-</td>
-<td>
-
-    use \Bar;
-    
-    namespace \Foo;
-
-</td>
-   </tr>
-  </table>
-  <table>
-   <tr>
-    <th>Valid: A single blank line after the final use statement.</th>
-    <th>Invalid: No blank line after the final use statement.</th>
-   </tr>
-   <tr>
-<td>
-
-    use \Foo;
-    use \Bar;
-    
-    class Baz
-    {
-    }
-
-</td>
-<td>
-
-    use \Foo;
-    use \Bar;
-    class Baz
-    {
-    }
-
-</td>
-   </tr>
-  </table>
-
-## Namespace Declarations
-There must be one blank line after the namespace declaration.
-  <table>
-   <tr>
-    <th>Valid: One blank line after the namespace declaration.</th>
-    <th>Invalid: No blank line after the namespace declaration.</th>
-   </tr>
-   <tr>
-<td>
-
-    namespace \Foo\Bar;
-    
-    use \Baz;
-
-</td>
-<td>
-
-    namespace \Foo\Bar;
-    use \Baz;
-
-</td>
-   </tr>
-  </table>
-
-## End File Newline
-PHP Files should end with exactly one newline.
-
 ## Control Structure Spacing
 Control Structures should have 0 spaces after opening parentheses and 0 spaces before closing parentheses.
   <table>
@@ -505,6 +348,35 @@ Control Structures should have 0 spaces after opening parentheses and 0 spaces b
 
     if ( $foo ) {
         $var = 1;
+    }
+
+</td>
+   </tr>
+  </table>
+
+## Elseif Declarations
+PHP&#039;s elseif keyword should be used instead of else if.
+  <table>
+   <tr>
+    <th>Valid: Single word elseif keyword used.</th>
+    <th>Invalid: Separate else and if keywords used.</th>
+   </tr>
+   <tr>
+<td>
+
+    if ($foo) {
+        $var = 1;
+    } elseif ($bar) {
+        $var = 2;
+    }
+
+</td>
+<td>
+
+    if ($foo) {
+        $var = 1;
+    } else if ($bar) {
+        $var = 2;
     }
 
 </td>
@@ -641,60 +513,157 @@ Case statements should be indented 4 spaces from the switch keyword.  It should 
    </tr>
   </table>
 
-## Elseif Declarations
-PHP's elseif keyword should be used instead of else if.
+## End File Newline
+PHP Files should end with exactly one newline.
+
+## Method Declarations
+Method names should not be prefixed with an underscore to indicate visibility.  The static keyword, when present, should come after the visibility declaration, and the final and abstract keywords should come before.
   <table>
    <tr>
-    <th>Valid: Single word elseif keyword used.</th>
-    <th>Invalid: Separate else and if keywords used.</th>
+    <th>Valid: Correct method naming.</th>
+    <th>Invalid: An underscore prefix used to indicate visibility.</th>
    </tr>
    <tr>
 <td>
 
-    if ($foo) {
-        $var = 1;
-    } elseif ($bar) {
-        $var = 2;
+    class Foo
+    {
+        private function bar()
+        {
+        }
     }
 
 </td>
 <td>
 
-    if ($foo) {
-        $var = 1;
-    } else if ($bar) {
-        $var = 2;
+    class Foo
+    {
+        private function _bar()
+        {
+        }
+    }
+
+</td>
+   </tr>
+  </table>
+  <table>
+   <tr>
+    <th>Valid: Correct ordering of method prefixes.</th>
+    <th>Invalid: static keyword used before visibility and final used after.</th>
+   </tr>
+   <tr>
+<td>
+
+    class Foo
+    {
+        final public static function bar()
+        {
+        }
+    }
+
+</td>
+<td>
+
+    class Foo
+    {
+        static public final function bar()
+        {
+        }
     }
 
 </td>
    </tr>
   </table>
 
-## Method Name
-Method names MUST be declared in camelCase.
+## Namespace Declarations
+There must be one blank line after the namespace declaration.
   <table>
    <tr>
-    <th>Valid: method name in camelCase.</th>
-    <th>Invalid: method name not in camelCase.</th>
+    <th>Valid: One blank line after the namespace declaration.</th>
+    <th>Invalid: No blank line after the namespace declaration.</th>
    </tr>
    <tr>
 <td>
 
-    class Foo
+    namespace \Foo\Bar;
+    
+    use \Baz;
+
+</td>
+<td>
+
+    namespace \Foo\Bar;
+    use \Baz;
+
+</td>
+   </tr>
+  </table>
+
+## Namespace Declarations
+Each use declaration must contain only one namespace and must come after the first namespace declaration.  There should be one blank line after the final use statement.
+  <table>
+   <tr>
+    <th>Valid: One use declaration per namespace.</th>
+    <th>Invalid: Multiple namespaces in a use declaration.</th>
+   </tr>
+   <tr>
+<td>
+
+    use \Foo;
+    use \Bar;
+
+</td>
+<td>
+
+    use \Foo, \Bar;
+
+</td>
+   </tr>
+  </table>
+  <table>
+   <tr>
+    <th>Valid: Use statements come after first namespace.</th>
+    <th>Invalid: Namespace declared after use.</th>
+   </tr>
+   <tr>
+<td>
+
+    namespace \Foo;
+    
+    use \Bar;
+
+</td>
+<td>
+
+    use \Bar;
+    
+    namespace \Foo;
+
+</td>
+   </tr>
+  </table>
+  <table>
+   <tr>
+    <th>Valid: A single blank line after the final use statement.</th>
+    <th>Invalid: No blank line after the final use statement.</th>
+   </tr>
+   <tr>
+<td>
+
+    use \Foo;
+    use \Bar;
+    
+    class Baz
     {
-        private function doBar()
-        {
-        }
     }
 
 </td>
 <td>
 
-    class Foo
+    use \Foo;
+    use \Bar;
+    class Baz
     {
-        private function do_bar()
-        {
-        }
     }
 
 </td>
@@ -781,6 +750,37 @@ A php file should either contain declarations with no side effects, or should ju
     }
     
     echo "Class Foo loaded."
+
+</td>
+   </tr>
+  </table>
+
+## Method Name
+Method names MUST be declared in camelCase.
+  <table>
+   <tr>
+    <th>Valid: method name in camelCase.</th>
+    <th>Invalid: method name not in camelCase.</th>
+   </tr>
+   <tr>
+<td>
+
+    class Foo
+    {
+        private function doBar()
+        {
+        }
+    }
+
+</td>
+<td>
+
+    class Foo
+    {
+        private function do_bar()
+        {
+        }
+    }
 
 </td>
    </tr>
@@ -2391,4 +2391,4 @@ Semicolons should not have spaces before them.
 </td>
    </tr>
   </table>
-Documentation generated on Wed, 28 Jul 2021 14:55:58 +0200 by [PHP_CodeSniffer 3.6.0](https://github.com/squizlabs/PHP_CodeSniffer)
+Documentation generated on Fri, 13 Jan 2023 18:14:26 +0100 by [PHP_CodeSniffer 3.7.1](https://github.com/squizlabs/PHP_CodeSniffer)

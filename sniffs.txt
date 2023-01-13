@@ -1,5 +1,5 @@
 
-The SlimAPI standard contains 201 sniffs
+The SlimAPI standard contains 212 sniffs
 
 Generic (45 sniffs)
 -------------------
@@ -83,13 +83,20 @@ PSR2 (12 sniffs)
   PSR2.Namespaces.NamespaceDeclaration
   PSR2.Namespaces.UseDeclaration
 
-SlevomatCodingStandard (89 sniffs)
-----------------------------------
+SlevomatCodingStandard (100 sniffs)
+-----------------------------------
   SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
   SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
   SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
   SlevomatCodingStandard.Arrays.TrailingArrayComma
+  SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing
+  SlevomatCodingStandard.Attributes.AttributesOrder
+  SlevomatCodingStandard.Attributes.DisallowAttributesJoining
+  SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine
+  SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment
+  SlevomatCodingStandard.Classes.BackedEnumTypeSpacing
   SlevomatCodingStandard.Classes.ClassConstantVisibility
+  SlevomatCodingStandard.Classes.ClassLength
   SlevomatCodingStandard.Classes.ClassMemberSpacing
   SlevomatCodingStandard.Classes.ClassStructure
   SlevomatCodingStandard.Classes.ConstantSpacing
@@ -99,8 +106,9 @@ SlevomatCodingStandard (89 sniffs)
   SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
   SlevomatCodingStandard.Classes.MethodSpacing
   SlevomatCodingStandard.Classes.ModernClassNameReference
+  SlevomatCodingStandard.Classes.ParentCallSpacing
+  SlevomatCodingStandard.Classes.PropertyDeclaration
   SlevomatCodingStandard.Classes.PropertySpacing
-  SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion
   SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
   SlevomatCodingStandard.Classes.TraitUseDeclaration
   SlevomatCodingStandard.Classes.UselessLateStaticBinding
@@ -110,6 +118,7 @@ SlevomatCodingStandard (89 sniffs)
   SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment
   SlevomatCodingStandard.Commenting.UselessFunctionDocComment
   SlevomatCodingStandard.Commenting.UselessInheritDocComment
+  SlevomatCodingStandard.Complexity.Cognitive
   SlevomatCodingStandard.ControlStructures.AssignmentInCondition
   SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
   SlevomatCodingStandard.ControlStructures.DisallowEmpty
@@ -123,11 +132,13 @@ SlevomatCodingStandard (89 sniffs)
   SlevomatCodingStandard.Exceptions.DeadCatch
   SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly
   SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
-  SlevomatCodingStandard.Functions.ArrowFunctionDeclaration
   SlevomatCodingStandard.Functions.DisallowArrowFunction
   SlevomatCodingStandard.Functions.DisallowEmptyFunction
-  SlevomatCodingStandard.Functions.FunctionLength
+  SlevomatCodingStandard.Functions.DisallowNamedArguments
+  SlevomatCodingStandard.Functions.DisallowTrailingCommaInClosureUse
+  SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration
   SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
+  SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse
   SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
   SlevomatCodingStandard.Functions.StaticClosure
   SlevomatCodingStandard.Functions.StrictCall
@@ -155,6 +166,7 @@ SlevomatCodingStandard (89 sniffs)
   SlevomatCodingStandard.PHP.ForbiddenClasses
   SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking
   SlevomatCodingStandard.PHP.ReferenceSpacing
+  SlevomatCodingStandard.PHP.RequireNowdoc
   SlevomatCodingStandard.PHP.ShortList
   SlevomatCodingStandard.PHP.TypeCast
   SlevomatCodingStandard.PHP.UselessParentheses
@@ -166,7 +178,6 @@ SlevomatCodingStandard (89 sniffs)
   SlevomatCodingStandard.TypeHints.ParameterTypeHint
   SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
   SlevomatCodingStandard.TypeHints.PropertyTypeHint
-  SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing
   SlevomatCodingStandard.TypeHints.ReturnTypeHint
   SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing
   SlevomatCodingStandard.TypeHints.UnionTypeHintFormat

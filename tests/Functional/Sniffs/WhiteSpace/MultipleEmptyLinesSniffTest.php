@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SlimAPI\Tests\Functional\Sniffs\WhiteSpace;
+namespace SlimAPI\Sniffs\WhiteSpace;
 
-use SlimAPI\Sniffs\WhiteSpace\MultipleEmptyLinesSniff;
-use SlimAPI\Tests\Functional\TestCase;
+use SlevomatCodingStandard\Sniffs\TestCase;
 
 class MultipleEmptyLinesSniffTest extends TestCase
 {
