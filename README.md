@@ -32,7 +32,7 @@ See [LICENSE][link-license] file for more information.
 [link-phpstan]: phpstan.neon
 [link-psr-12]: https://www.php-fig.org/psr/psr-12/
 [link-psr-1]: https://www.php-fig.org/psr/psr-1
-[link-release]: https://github.com/slimapi/coding-standard/releases
+[link-release]: https://github.com/slimapi/coding-standard/tags
 [link-slevomat-coding-standard]: https://github.com/slevomat/coding-standard/tree/master/SlevomatCodingStandard/Sniffs
 [link-slevomat-issue]: https://github.com/slevomat/coding-standard/issues/62
 [link-slim]: http://www.slimframework.com
