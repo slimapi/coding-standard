@@ -25,7 +25,7 @@
         "bats": "bats tests/Integration",
         "doc": "./vendor/bin/phpcs --standard=phpcs.xml --generator=Markdown > standard.md",
         "ec": "ec",
-        "phpcbf": "./vendor/bin/phpcs --standard=phpcs.xml",
+        "phpcbf": "./vendor/bin/phpcbf --standard=phpcs.xml",
         "phpcs": "./vendor/bin/phpcs --standard=phpcs.xml",
         "phpstan": "phpstan --ansi --configuration=phpstan.neon analyse src/ tests/",
         "phpunit": "phpunit --no-coverage",
