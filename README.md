@@ -60,7 +60,7 @@ We welcome contributions and suggestions! Please report any issues in the [issue
 [link-release]: https://github.com/slimapi/coding-standard/tags
 [link-slevomat-coding-standard]: https://github.com/slevomat/coding-standard/tree/master/SlevomatCodingStandard/Sniffs
 
-[img-build]: https://img.shields.io/github/actions/workflow/status/slimapi/coding-standard/.github/workflows/ci.yml?branch=master&style=flat-square&label=Build
+[img-build]: https://img.shields.io/github/actions/workflow/status/slimapi/coding-standard/ci.yaml?branch=master&style=flat-square&label=Build
 [img-coverage]: https://img.shields.io/codecov/c/github/slimapi/coding-standard/master?style=flat-square&label=Coverage
 [img-license]: https://img.shields.io/github/license/slimapi/coding-standard?style=flat-square&label=License&color=blue
 [img-php-version]: https://img.shields.io/packagist/dependency-v/slimapi/coding-standard/php?label=PHP&style=flat-square
