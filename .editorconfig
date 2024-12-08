@@ -8,11 +8,9 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.neon]
+[{*.yaml,*.xml,*.neon}]
 indent_size = 2
 
-[*.yml]
-indent_size = 2
-
-[*.xml]
-indent_size = 2
+[Makefile]
+indent_style = tabs
+max_line_length = off

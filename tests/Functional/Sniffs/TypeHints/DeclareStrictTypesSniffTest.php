@@ -4,24 +4,21 @@ declare(strict_types=1);
 
 namespace SlimAPI\Sniffs\TypeHints;
 
-use Exception;
+use PHPUnit\Framework\Attributes\DataProvider;
 use SlevomatCodingStandard\Sniffs\TestCase;
 
 class DeclareStrictTypesSniffTest extends TestCase
 {
     public function testMissingDeclareStrictTypes(): void
     {
-        $report = self::checkFile(__DIR__ . '/fixtures/DeclareStrictTypesMissing.php', ['enabled' => true]);
+        $report = self::checkFile(__DIR__ . '/fixtures/DeclareStrictTypesMissing.php');
         self::assertNoSniffErrorInFile($report);
     }
 
-    /**
-     * @dataProvider failingExamples
-     * @throws Exception
-     */
+    #[DataProvider('failingExamples')]
     public function testErrors(string $file): void
     {
-        $report = self::checkFile($file, ['enabled' => true]);
+        $report = self::checkFile($file);
 
         self::assertSniffError(
             $report,
@@ -39,7 +36,10 @@ class DeclareStrictTypesSniffTest extends TestCase
         );
     }
 
-    public function failingExamples(): array
+    /**
+     * @return array<int, array<int,string>>
+     */
+    public static function failingExamples(): array
     {
         return [
             [__DIR__ . '/fixtures/DeclareStrictTypesA.php'],

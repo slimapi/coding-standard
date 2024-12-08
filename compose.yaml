@@ -1,15 +1,15 @@
----
-version: "3.7"
-
 services:
   app:
     build:
       context: .
       args:
-        - BASE_IMAGE=${BASE_IMAGE_PHP81}
+        - BASE_IMAGE=${BASE_IMAGE_PHP84}
 
     volumes:
       - .:/var/www/:cached
 
     ports:
       - "8080:80"
+
+    environment:
+      XDEBUG_MODE: coverage,debug

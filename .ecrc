@@ -1,5 +1,5 @@
 {
     "Verbose": false,
     "IgnoreDefaults": false,
-    "Exclude": ["sniffs.txt", "standard.md", "vendor", "vendor-global", ".idea"]
+    "Exclude": ["SNIFFS.txt", "STANDARD.md", "vendor", "vendor-global", ".idea"]
 }

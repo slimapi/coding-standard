@@ -1,7 +1,7 @@
 
-The SlimAPI standard contains 212 sniffs
+The SlimAPI standard contains 219 sniffs
 
-Generic (45 sniffs)
+Generic (48 sniffs)
 -------------------
   Generic.Arrays.ArrayIndent
   Generic.Arrays.DisallowLongArraySyntax
@@ -43,14 +43,17 @@ Generic (45 sniffs)
   Generic.PHP.LowerCaseType
   Generic.PHP.NoSilencedErrors
   Generic.PHP.SAPIUsage
+  Generic.Strings.UnnecessaryHeredoc
   Generic.Strings.UnnecessaryStringConcat
   Generic.WhiteSpace.ArbitraryParenthesesSpacing
   Generic.WhiteSpace.DisallowTabIndent
+  Generic.WhiteSpace.HereNowdocIdentifierSpacing
+  Generic.WhiteSpace.IncrementDecrementSpacing
   Generic.WhiteSpace.LanguageConstructSpacing
   Generic.WhiteSpace.ScopeIndent
 
 MySource (1 sniff)
--------------------
+------------------
   MySource.Channels.DisallowSelfActions
 
 PEAR (6 sniffs)
@@ -83,14 +86,15 @@ PSR2 (12 sniffs)
   PSR2.Namespaces.NamespaceDeclaration
   PSR2.Namespaces.UseDeclaration
 
-SlevomatCodingStandard (100 sniffs)
+SlevomatCodingStandard (105 sniffs)
 -----------------------------------
+  SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys
+  SlevomatCodingStandard.Arrays.ArrayAccess
   SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
   SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement
   SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace
   SlevomatCodingStandard.Arrays.TrailingArrayComma
   SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing
-  SlevomatCodingStandard.Attributes.AttributesOrder
   SlevomatCodingStandard.Attributes.DisallowAttributesJoining
   SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine
   SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment
@@ -100,18 +104,20 @@ SlevomatCodingStandard (100 sniffs)
   SlevomatCodingStandard.Classes.ClassMemberSpacing
   SlevomatCodingStandard.Classes.ClassStructure
   SlevomatCodingStandard.Classes.ConstantSpacing
-  SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion
   SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
   SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition
   SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces
+  SlevomatCodingStandard.Classes.EnumCaseSpacing
   SlevomatCodingStandard.Classes.MethodSpacing
   SlevomatCodingStandard.Classes.ModernClassNameReference
   SlevomatCodingStandard.Classes.ParentCallSpacing
   SlevomatCodingStandard.Classes.PropertyDeclaration
   SlevomatCodingStandard.Classes.PropertySpacing
+  SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion
   SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature
   SlevomatCodingStandard.Classes.TraitUseDeclaration
   SlevomatCodingStandard.Classes.UselessLateStaticBinding
+  SlevomatCodingStandard.Commenting.AnnotationName
   SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration
   SlevomatCodingStandard.Commenting.ForbiddenAnnotations
   SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration
@@ -123,6 +129,7 @@ SlevomatCodingStandard (100 sniffs)
   SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch
   SlevomatCodingStandard.ControlStructures.DisallowEmpty
   SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator
+  SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator
   SlevomatCodingStandard.ControlStructures.DisallowYodaComparison
   SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses
   SlevomatCodingStandard.ControlStructures.NewWithParentheses
@@ -137,6 +144,7 @@ SlevomatCodingStandard (100 sniffs)
   SlevomatCodingStandard.Functions.DisallowNamedArguments
   SlevomatCodingStandard.Functions.DisallowTrailingCommaInClosureUse
   SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration
+  SlevomatCodingStandard.Functions.NamedArgumentSpacing
   SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
   SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse
   SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
@@ -154,8 +162,8 @@ SlevomatCodingStandard (100 sniffs)
   SlevomatCodingStandard.Namespaces.UnusedUses
   SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash
   SlevomatCodingStandard.Namespaces.UseFromSameNamespace
-  SlevomatCodingStandard.Namespaces.UseSpacing
   SlevomatCodingStandard.Namespaces.UselessAlias
+  SlevomatCodingStandard.Namespaces.UseSpacing
   SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator
   SlevomatCodingStandard.Operators.DisallowEqualOperators
   SlevomatCodingStandard.Operators.NegationOperatorSpacing
@@ -173,8 +181,8 @@ SlevomatCodingStandard (100 sniffs)
   SlevomatCodingStandard.PHP.UselessSemicolon
   SlevomatCodingStandard.TypeHints.DeclareStrictTypes
   SlevomatCodingStandard.TypeHints.LongTypeHints
-  SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition
   SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue
+  SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition
   SlevomatCodingStandard.TypeHints.ParameterTypeHint
   SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing
   SlevomatCodingStandard.TypeHints.PropertyTypeHint
@@ -191,7 +199,7 @@ SlimAPI (2 sniffs)
   SlimAPI.TypeHints.DeclareStrictTypes
   SlimAPI.WhiteSpace.MultipleEmptyLines
 
-Squiz (43 sniffs)
+Squiz (42 sniffs)
 -----------------
   Squiz.Arrays.ArrayBracketSpacing
   Squiz.Arrays.ArrayDeclaration
@@ -203,7 +211,6 @@ Squiz (43 sniffs)
   Squiz.Classes.ValidClassName
   Squiz.Commenting.DocCommentAlignment
   Squiz.Commenting.EmptyCatchComment
-  Squiz.Commenting.FunctionComment
   Squiz.ControlStructures.ControlSignature
   Squiz.ControlStructures.ForEachLoopDeclaration
   Squiz.ControlStructures.ForLoopDeclaration

@@ -1,4 +1,4 @@
-ARG BASE_IMAGE
+ARG BASE_IMAGE=slimapi/nginx-php:latest
 FROM ${BASE_IMAGE}
 
 WORKDIR ${PROJECT_ROOT}

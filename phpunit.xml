@@ -1,31 +1,37 @@
 <?xml version="1.0"?>
+<!-- https://docs.phpunit.de/en/11.4/configuration.html -->
 <phpunit
-  beStrictAboutChangesToGlobalState="true"
-  beStrictAboutCoversAnnotation="true"
-  beStrictAboutOutputDuringTests="true"
-  beStrictAboutResourceUsageDuringSmallTests="true"
-  beStrictAboutTestsThatDoNotTestAnything="true"
-  beStrictAboutTodoAnnotatedTests="true"
   bootstrap="vendor/autoload.php"
-  cacheResultFile="tmp/phpunit.result.cache"
   colors="true"
-  executionOrder="default"
+  displayDetailsOnPhpunitDeprecations="true"
+  failOnDeprecation="true"
+  failOnEmptyTestSuite="true"
+  failOnNotice="true"
+  failOnPhpunitDeprecation="true"
+  failOnRisky="true"
+  failOnWarning="true"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.4/phpunit.xsd"
 >
-  <coverage processUncoveredFiles="true">
-    <include>
-      <directory suffix=".php">src</directory>
-    </include>
-    <report>
-      <html outputDirectory="public/coverage"/>
-      <text outputFile="php://stdout" showUncoveredFiles="true"/>
-    </report>
-  </coverage>
   <testsuites>
     <testsuite name="functional">
       <directory>tests/Functional</directory>
     </testsuite>
   </testsuites>
-  <logging/>
+
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
+
+  <coverage
+    pathCoverage="true"
+    disableCodeCoverageIgnore="false"
+  >
+    <report>
+      <html outputDirectory="public/coverage"/>
+      <text outputFile="php://stdout" showUncoveredFiles="true"/>
+    </report>
+  </coverage>
 </phpunit>

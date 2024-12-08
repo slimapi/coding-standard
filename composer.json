@@ -18,19 +18,7 @@
     },
     "require": {
         "php": "^8.1",
-        "squizlabs/php_codesniffer": "^3.7",
-        "slevomat/coding-standard": "^8.8"
-    },
-    "scripts": {
-        "bats": "bats tests/Integration",
-        "doc": "./vendor/bin/phpcs --standard=phpcs.xml --generator=Markdown > standard.md",
-        "ec": "ec",
-        "phpcbf": "./vendor/bin/phpcbf --standard=phpcs.xml",
-        "phpcs": "./vendor/bin/phpcs --standard=phpcs.xml",
-        "phpstan": "phpstan --ansi --configuration=phpstan.neon analyse src/ tests/",
-        "phpunit": "phpunit --no-coverage",
-        "phpunit-coverage": "phpunit",
-        "sniffs": "./vendor/bin/phpcs --standard=src/ruleset.xml -e > sniffs.txt",
-        "test": ["@bats", "@ec", "@phpcs", "@phpstan", "@phpunit-coverage"]
+        "squizlabs/php_codesniffer": "^3.11",
+        "slevomat/coding-standard": "^8.15"
     }
 }

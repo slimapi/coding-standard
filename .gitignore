@@ -1,7 +1,7 @@
-public/coverage
+public
+tmp
 vendor/
 vendor-global/
-tmp/*
-!tmp/.gitkeep
-!.env
 composer.lock
+.phpunit.result.cache
+coverage.xml

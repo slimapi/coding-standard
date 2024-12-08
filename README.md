@@ -1,4 +1,4 @@
-# SlimAPI Coding Standard
+# ✅ SlimAPI Coding Standard
 [![PHP Version][img-php-version]][link-packagist]
 [![Release][img-release]][link-release]
 [![License][img-license]][link-license]
@@ -6,23 +6,49 @@
 [![Code Coverage][img-coverage]][link-coverage]
 [![PHPStan][img-phpstan]][link-phpstan]
 
-PHP coding standard for better code readability, consistency and good programming practises.
+A PHP coding standard for better code **readability**, **consistency**, and adherence to **best practices**.
 
-* Based on [PSR-1][link-psr-1], [PSR-12][link-psr-12] and [Slevomat Coding Standard][link-slevomat-coding-standard]
-* For more details which standards are used, look at [src/ruleset.xml](src/ruleset.xml)
-* For full list of sniffs, look at [sniffs.txt](sniffs.txt)
+## ✨ Features
 
-## Code Style Guide
-The guide is automatically generated and available at [standard.md](standard.md).
+- **Modern Standards**: Built on [PER Coding Style 2.0][link-per] and [Slevomat Coding Standard][link-slevomat-coding-standard].
+- **Customizable Rules**: Check the [ruleset.xml](src/ruleset.xml) for details on the applied standards.
+- **Full Sniff List**: Explore the [sniffs list](SNIFFS.txt) for a comprehensive overview.
 
-## Local Development & Testing
+## 📘 Documentation
+
+Dive into our [Code Style Guide](STANDARD.md) for a detailed explanation of our coding practices.
+
+## 📦 Installation
+
+1. Add the dependency to your project:
+    ```bash
+    composer require --dev slimapi/coding-standard
+    ```
+2. Create a `phpcs.yml` file in the project root:
+    ```xml
+    <ruleset name="PHP_CodeSniffer">
+        <rule ref="./vendor/slimapi/coding-standard/src/ruleset.xml"/>
+        <file>src</file>
+    </ruleset>
+    ```
+
+## 🛠️ Local Development & Testing
+Clone the repo, then use the power of `make` to simplify your workflow:
+
 ```bash
-$ docker compose up
-$ docker compose exec app composer.sh test
+make help  # See all available commands
+make run   # Start the app container
+make test  # Run tests and code checkers
 ```
 
-## License
-See [LICENSE][link-license] file for more information.
+
+## 📜 License
+
+This project is licensed under the terms specified in the [LICENSE][link-license] file.
+
+## 🌟 Get Involved
+
+We welcome contributions and suggestions! Please report any issues in the [issue tracker][link-issue-tracker].
 
 [link-build]: https://github.com/slimapi/coding-standard/actions
 [link-coverage]: https://codecov.io/gh/slimapi/coding-standard
@@ -30,16 +56,13 @@ See [LICENSE][link-license] file for more information.
 [link-license]: LICENSE.md
 [link-packagist]: https://packagist.org/packages/slimapi/coding-standard
 [link-phpstan]: phpstan.neon
-[link-psr-12]: https://www.php-fig.org/psr/psr-12/
-[link-psr-1]: https://www.php-fig.org/psr/psr-1
+[link-per]: https://www.php-fig.org/per/coding-style/
 [link-release]: https://github.com/slimapi/coding-standard/tags
 [link-slevomat-coding-standard]: https://github.com/slevomat/coding-standard/tree/master/SlevomatCodingStandard/Sniffs
-[link-slevomat-issue]: https://github.com/slevomat/coding-standard/issues/62
-[link-slim]: http://www.slimframework.com
 
 [img-build]: https://img.shields.io/github/actions/workflow/status/slimapi/coding-standard/.github/workflows/ci.yml?branch=master&style=flat-square&label=Build
 [img-coverage]: https://img.shields.io/codecov/c/github/slimapi/coding-standard/master?style=flat-square&label=Coverage
 [img-license]: https://img.shields.io/github/license/slimapi/coding-standard?style=flat-square&label=License&color=blue
 [img-php-version]: https://img.shields.io/packagist/dependency-v/slimapi/coding-standard/php?label=PHP&style=flat-square
-[img-phpstan]: https://img.shields.io/badge/style-%208%20%28strict%29-brightgreen.svg?&label=PHPStan&style=flat-square
+[img-phpstan]: https://img.shields.io/badge/style-%209%20%28strict%29-brightgreen.svg?&label=PHPStan&style=flat-square
 [img-release]: https://img.shields.io/github/v/tag/slimapi/coding-standard.svg?label=Release&style=flat-square

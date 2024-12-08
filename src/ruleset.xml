@@ -6,6 +6,7 @@
   <rule ref="PEAR.Commenting.InlineComment"/>
   <rule ref="PEAR.ControlStructures.ControlSignature"/>
   <rule ref="PEAR.Formatting.MultiLineAssignment"/>
+  <rule ref="PEAR.Functions.ValidDefaultValue"/>
   <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
 
   <rule ref="PSR2">
@@ -17,6 +18,7 @@
     <exclude
       name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
   </rule>
+  <rule ref="PSR2.ControlStructures.ElseIfDeclaration"/>
   <rule ref="PSR2.ControlStructures.SwitchDeclaration">
     <exclude
       name="PSR2.ControlStructures.SwitchDeclaration.caseIndent"/>
@@ -26,6 +28,15 @@
   <rule ref="PSR2.Methods.FunctionCallSignature">
     <exclude
       name="PSR2.Methods.FunctionCallSignature.SpaceAfterCloseBracket"/>
+  </rule>
+  <rule ref="PSR2.Methods.FunctionCallSignature.OpeningIndent">
+    <severity>0</severity>
+  </rule>
+  <rule ref="PSR2.Methods.FunctionClosingBrace"/>
+  <rule ref="PSR2.Methods.MethodDeclaration"/>
+  <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
+    <type>error</type>
+    <message>Method name "%s" must not be prefixed with an underscore to indicate visibility</message>
   </rule>
 
   <rule ref="MySource.Channels.DisallowSelfActions"/>
@@ -51,6 +62,7 @@
     </properties>
   </rule>
   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+  <rule ref="Generic.ControlStructures.InlineControlStructure"/>
   <rule ref="Generic.Files.EndFileNewline"/>
   <rule ref="Generic.Files.InlineHTML"/>
   <rule ref="Generic.Files.OneClassPerFile"/>
@@ -70,6 +82,7 @@
   </rule>
   <rule ref="Generic.Formatting.SpaceAfterCast"/>
   <rule ref="Generic.Functions.CallTimePassByReference"/>
+  <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
   <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
   <rule ref="Generic.Metrics.CyclomaticComplexity"/>
   <rule ref="Generic.Metrics.NestingLevel">
@@ -84,10 +97,13 @@
   <rule ref="Generic.PHP.DeprecatedFunctions"/>
   <rule ref="Generic.PHP.DisallowAlternativePHPTags"/>
   <rule ref="Generic.PHP.ForbiddenFunctions"/>
+  <rule ref="Generic.PHP.LowerCaseConstant"/>
+  <rule ref="Generic.PHP.LowerCaseKeyword"/>
   <rule ref="Generic.PHP.LowerCaseType"/>
   <rule ref="Generic.PHP.NoSilencedErrors"/>
 
   <rule ref="Generic.PHP.SAPIUsage"/>
+  <rule ref="Generic.Strings.UnnecessaryHeredoc"/>
   <rule ref="Generic.Strings.UnnecessaryStringConcat">
     <properties>
       <property name="allowMultiline" value="true"/>
@@ -99,19 +115,18 @@
     </properties>
   </rule>
   <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+  <rule ref="Generic.WhiteSpace.HereNowdocIdentifierSpacing"/>
+  <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
   <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
 
+  <rule ref="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys"/>
+  <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess"/>
   <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
   <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
   <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
   <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 
   <rule ref="SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing"/>
-  <rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
-    <properties>
-      <property name="orderAlphabetically" type="true"/>
-    </properties>
-  </rule>
   <rule ref="SlevomatCodingStandard.Attributes.DisallowAttributesJoining"/>
   <rule ref="SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine"/>
   <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
@@ -122,6 +137,7 @@
       <property name="fixable" value="true"/>
     </properties>
   </rule>
+  <rule ref="SlevomatCodingStandard.Classes.EnumCaseSpacing"/>
   <rule ref="SlevomatCodingStandard.Classes.ClassLength">
     <properties>
       <property name="includeComments" value="false"/>
@@ -132,7 +148,6 @@
   <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing"/>
   <rule ref="SlevomatCodingStandard.Classes.ClassStructure"/>
   <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing"/>
-  <rule ref="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion"/>
   <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
   <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
   <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
@@ -146,10 +161,12 @@
   <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
   <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
   <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/>
+  <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion"/>
   <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/>
   <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
   <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
 
+  <rule ref="SlevomatCodingStandard.Commenting.AnnotationName"/>
   <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
   <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
   <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
@@ -167,6 +184,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
@@ -187,6 +205,7 @@
       <property name="onlySingleLine" value="true"/>
     </properties>
   </rule>
+  <rule ref="SlevomatCodingStandard.Functions.NamedArgumentSpacing"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse"/>
@@ -315,34 +334,20 @@
     <exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar"/>
   </rule>
   <rule ref="Squiz.Commenting.EmptyCatchComment"/>
-  <rule ref="Squiz.Commenting.FunctionComment">
-    <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.IncorrectTypeHint"/>
-    <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.InvalidReturnNotVoid"/>
-    <exclude name="Squiz.Commenting.FunctionComment.InvalidThrows"/>
-    <exclude name="Squiz.Commenting.FunctionComment.Missing"/>
-    <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.MissingParamTag"/>
-    <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>
-    <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.SpacingAfterParamName"/>
-    <exclude
-      name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
-    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNoFullStop"/>
-    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital"/>
-    <exclude name="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
+  <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceAfterOpen">
+    <severity>0</severity>
   </rule>
+  <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceBeforeClose">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterOpen">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.ControlStructures.ForLoopDeclaration.SpacingBeforeClose">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
+  <rule ref="Squiz.Functions.FunctionDeclaration"/>
   <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
   <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
     <properties>
@@ -359,6 +364,7 @@
   <rule ref="Squiz.Operators.IncrementDecrementUsage">
     <exclude name="Squiz.Operators.IncrementDecrementUsage.NoBrackets"/>
   </rule>
+  <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
   <rule ref="Squiz.Operators.ValidLogicalOperators"/>
   <rule ref="Squiz.PHP.CommentedOutCode">
     <properties>
@@ -382,9 +388,13 @@
   </rule>
   <rule ref="Squiz.Strings.EchoedStrings"/>
   <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+  <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+  <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
   <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
   <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
   <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
+    <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+    <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
     <properties>
       <property name="ignoreNewlines" value="true"/>
     </properties>

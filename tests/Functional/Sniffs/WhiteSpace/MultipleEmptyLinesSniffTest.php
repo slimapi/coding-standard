@@ -10,7 +10,7 @@ class MultipleEmptyLinesSniffTest extends TestCase
 {
     public function testErrors(): void
     {
-        $report = self::checkFile(__DIR__ . '/fixtures/MultipleEmptyLines.php', ['enabled' => true]);
+        $report = self::checkFile(__DIR__ . '/fixtures/MultipleEmptyLines.php');
 
         self::assertSame(3, $report->getErrorCount());
 

@@ -17,7 +17,7 @@ class MultipleEmptyLinesSniff implements Sniff
     public const CODE_MULTIPLE_EMPTY_LINES = 'MultipleEmptyLines';
 
     /**
-     * @return array|mixed[]
+     * @return array<int|string>
      */
     public function register(): array
     {

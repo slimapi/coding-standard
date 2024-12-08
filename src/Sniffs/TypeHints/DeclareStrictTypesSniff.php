@@ -17,7 +17,7 @@ class DeclareStrictTypesSniff implements Sniff
     public const CODE_INCORRECT_WHITESPACE_AROUND_DECLARE = 'IncorrectWhitespaceAroundDeclare';
 
     /**
-     * @return array|mixed[]
+     * @return array<int|string>
      */
     public function register(): array
     {
@@ -27,9 +27,9 @@ class DeclareStrictTypesSniff implements Sniff
     }
 
     // phpcs:ignore SlevomatCodingStandard.TypeHints
-    public function process(File $phpcsFile, $openTagPointer)
+    public function process(File $phpcsFile, $stackPtr)
     {
-        $declarePointer = TokenHelper::findNext($phpcsFile, T_DECLARE, $openTagPointer);
+        $declarePointer = TokenHelper::findNext($phpcsFile, T_DECLARE, $stackPtr);
         if ($declarePointer === null) {
             return; // missing `declare` construct, will catch SlevomatCodingStandard.TypeHints.DeclareStrictTypes
         }

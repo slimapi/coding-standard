@@ -1,3 +1,5 @@
+# https://phpstan.org/config-reference
+
 includes:
   - /root/.composer/vendor/phpstan/phpstan-strict-rules/rules.neon
   - /root/.composer/vendor/phpstan/phpstan-nette/extension.neon
@@ -5,12 +7,14 @@ includes:
   - /root/.composer/vendor/phpstan/phpstan-phpunit/rules.neon
 
 parameters:
-  level: 8
+  level: 9
   tmpDir: %currentWorkingDirectory%/tmp
-  checkMissingIterableValueType: false
   bootstrapFiles:
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
+  paths:
+      - src
+      - tests
 
   excludePaths:
     - %currentWorkingDirectory%/tests/Functional/Sniffs/*/fixtures/*
