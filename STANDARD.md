@@ -2994,4 +2994,4 @@ When declaring strict types you should not put whitespace around the opening bra
 
 ## Multiple Empty Lines
 Multiple consecutive newlines in a file are not allowed.
-Documentation generated on Sun, 08 Dec 2024 13:36:56 +0100 by [PHP_CodeSniffer 3.11.1](https://github.com/PHPCSStandards/PHP_CodeSniffer)
+Documentation generated on Tue, 17 Dec 2024 16:45:22 +0100 by [PHP_CodeSniffer 3.11.1](https://github.com/PHPCSStandards/PHP_CodeSniffer)
